@@ -1,16 +1,22 @@
-import { RouterProvider } from "react-router";
-import { router } from "./routes/AppRouter";
-import ActionProvider from "./context/actionContext/ActionProvider";
-import { ToastContainer } from "react-toastify";
+import { RouterProvider } from "react-router"
+import { router } from "./routes/AppRouter"
+import ActionPrvider from "./context/actioncontext/ActionProvider"
+import { ToastContainer } from "react-toastify"
+
+
 
 function App() {
   return (
-    <ActionProvider>
+
+    <ActionPrvider>
       <RouterProvider router={router} />
 
-      <ToastContainer />
-    </ActionProvider>
-  );
+      <ToastContainer theme="dark" closeOnClick pauseOnHover autoClose={1500} position="top-center" className='rounded-full p-0' />
+    </ActionPrvider >
+
+
+
+  )
 }
 
-export default App;
+export default App
