@@ -8,7 +8,7 @@ function App() {
     <ActionPrvider>
       <RouterProvider router={router} />
 
-      <ToastContainer />
+      <ToastContainer position="top-center" />
     </ActionPrvider>
   );
 }
