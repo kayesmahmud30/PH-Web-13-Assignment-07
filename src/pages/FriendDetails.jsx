@@ -3,7 +3,7 @@ import FriendDetailsCard from '../components/ui/FriendDetailsCard'
 import useFriends from '../hook/useFriends';
 import Spinner from '../components/ui/Spinner';
 import { useContext } from 'react';
-import { ActionContext } from '../context/actioncontext/ActionContext';
+import { ActionContext } from '../context/actionContext/ActionContext';
 
 const FriendDetails = () => {
     const { id } = useParams();

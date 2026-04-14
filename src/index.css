@@ -1,10 +1,10 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-.nav .active{
-    background-color: #244D3F;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 12px 16px;
+.nav .active {
+  background-color: #244d3f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 16px;
 }
