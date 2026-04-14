@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ActionContext } from "../actionContext/ActionContext";
 
-const CallProvider = ({ children }) => {
+const ActionProvider = ({ children }) => {
   const [action, setAction] = useState([]);
   const data = {
     action,
@@ -12,4 +12,4 @@ const CallProvider = ({ children }) => {
   );
 };
 
-export default CallProvider;
+export default ActionProvider;
