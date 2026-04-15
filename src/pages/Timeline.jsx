@@ -24,7 +24,7 @@ const Timeline = () => {
           <div className="flex justify-between items-center gap-5">
             <select
               onChange={(e) => setFilterType(e.target.value)}
-              className="mt-6 w-60 border border-gray-300 border- shadow py-2 rounded-sm text-[#64748B] ring-inset hover:cursor-pointer bg-white outline-0 "
+              className="mt-6 w-30 lg:w-60 border border-gray-300 border- shadow py-2 rounded-sm text-[#64748B] ring-inset hover:cursor-pointer bg-white outline-0 "
             >
               <option>Filter timeline</option>
               <option value="call">Call</option>
@@ -35,15 +35,23 @@ const Timeline = () => {
         </div>
       )}
 
-      {filteredAction.map((actionData, ind) => (
-        <ActionCard
-          key={ind}
-          type={actionData.type}
-          icon={actionData.icon}
-          name={actionData.name}
-          date={actionData.date}
-        />
-      ))}
+      {filteredAction.length ? (
+        filteredAction.map((actionData, ind) => (
+          <ActionCard
+            key={ind}
+            type={actionData.type}
+            icon={actionData.icon}
+            name={actionData.name}
+            date={actionData.date}
+          />
+        ))
+      ) : (
+        <div className="flex items-center justify-center w-full h-75 rounded-2xl border-2 border-gray-300 my-10">
+          <h2 className="mx-auto text-gray-600 text-center text-3xl font-bold">
+            No Data Added!
+          </h2>
+        </div>
+      )}
     </div>
   );
 };
