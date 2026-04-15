@@ -23,7 +23,7 @@ const HeroBanner = ({
         </button>
       </div>
 
-      <div className="grid gap-7 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 mt-10 border-b pb-10 border-gray-200">
+      <div className="grid gap-7 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 mt-10 border-b pb-10 border-gray-200">
         <StatCards value={totalFriends} label="Total Friends" />
         <StatCards value={totalStatusOnTrack} label="On Track" />
         <StatCards value={totalStatusOverdue} label="Overdue" />

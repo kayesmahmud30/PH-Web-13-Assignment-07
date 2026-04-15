@@ -16,6 +16,7 @@ const FriendDetailsCard = ({ selectedProduct, action, setAction }) => {
     name,
     picture,
     tags,
+    bio,
     status,
     days_since_contact: contact,
     goal,
@@ -70,6 +71,7 @@ const FriendDetailsCard = ({ selectedProduct, action, setAction }) => {
           name={name}
           contactDays={contact}
           tags={tags}
+          bio={bio}
           status={status}
           email={email}
           emailLevel="Preferred:"

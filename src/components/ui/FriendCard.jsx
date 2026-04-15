@@ -5,6 +5,8 @@ const FriendCard = ({
   name,
   contactDays,
   tags,
+  bio,
+  
   status,
   emailLevel,
   email,
@@ -29,7 +31,7 @@ const FriendCard = ({
       </div>
       <div>
         <p className="text-[#64748B] font-medium">
-          "Former colleague, great mentor"
+          {`${bio}`}
         </p>
         <p className="text-[#64748B]">
           {emailLevel} {email}
